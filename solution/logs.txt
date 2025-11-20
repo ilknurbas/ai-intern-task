@@ -1,0 +1,13 @@
+--- Model Comparison ---
+Model Name | Execution Time (ms) | Accuracy (%) | Misclassified Query No
+gpt4omini | 41029.23 | 95.00 | [15, 16]
+gpt35turbo | 32994.24 | 95.00 | [15, 16]
+gpt5nano | 80977.73 | 95.00 | [15, 16]
+claudehaiku | 53650.53 | 95.00 | [15, 16]
+claudesonnet | 133950.94 | 95.00 | [15, 16]
+geminiflash | 92478.96 | 95.00 | [15, 16]
+geminiflashlite | 21600.69 | 95.00 | [15, 16]
+llama318b | 17854.01 | 95.00 | [15, 16]
+llama4 | 34686.69 | 95.00 | [15, 16]
+deepseekv31 | 70722.72 | 95.00 | [15, 16]
+mistralai | 41794.04 | 87.50 | [15, 16, 19, 29, 32]
