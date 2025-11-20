@@ -1,6 +1,6 @@
 # LLM Agent Framework
 
-A Python framework powered by LangChain and multiple LLMs that routes customer queries to the correct agent and returns the response. The system supports two agents: FAQ Agent for general store questions and Order Status Agent for checking order status. An LLM-based router decides which agent should handle each query and then the system outputs the agent’s final answer.
+A Python framework powered by multiple LLMs that routes customer queries to the correct agent and returns the response. The system supports two agents: FAQ Agent for general store questions and Order Status Agent for checking order status. An LLM-based router decides which agent should handle each query and then the system outputs the agent’s final answer.
 
 The framework uses the specified LLM models as a router to determine the intent of each query and forward it to the appropriate agent. If the query is classified as Order Status, the agent searches for an order ID within the query and retrieves the corresponding order information from mock data. If the query is classified as FAQ, the agent performs semantic information matching against the FAQ dataset to find the most relevant answer. Once the agent’s response is generated, it is passed back through the LLM to make the output more natural and human‑like before being returned to the customer.
 
@@ -9,8 +9,8 @@ The framework uses the specified LLM models as a router to determine the intent 
 
 1. Clone the repository and navigate to the project folder
    ```bash
-   git clone https://github.com/ilknurbas/nordhealth-ai-intern-task.git
-   cd nordhealth-ai-intern-task
+   git clone https://github.com/ilknurbas/ai-intern-task.git
+   cd ai-intern-task
    ```
 
 2. Create and activate a virtual environment
@@ -58,7 +58,7 @@ The framework uses the specified LLM models as a router to determine the intent 
 
    ```
    - `data/`: sample inputs and test data
-   - `main.py`: LangChain-based script
+   - `main.py`: program script
    - `requirements.txt`: dependencies 
    - `solution/`: generated outputs
      - `agent_responses.txt`: responses to each query
@@ -71,7 +71,7 @@ Selected criteria for evaluation are as follows:
 
 - **Execution Time (ms):** Measures how long each model takes to process the queries in the test set and determine the intent. 
  
-- **Routing Accuracy (%):** Indicates how often the model correctly identifies the query intent (FAQ vs Order Status) and routes it to the appropriate agent.
+- **Routing Accuracy (%):** Indicates the percentage of queries where the model correctly identifies the intent.
 
 - **Cost per 1M tokens (USD):** Represents the combined cost of processing 1 million tokens with the model.
 
